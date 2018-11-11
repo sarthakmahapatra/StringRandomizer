@@ -10,6 +10,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  Version: '1.0.0-beta'
 
 steps:
 - task: NuGetToolInstaller@0
@@ -28,6 +29,7 @@ steps:
   inputs:
     command: pack
     packagesToPack: 'StringRandomizer/*.csproj'
-    versioningScheme: byBuildNumber
+    versioningScheme: byEnvVar
+    versionEnvVar: '$(Version)'
     packDestination: '$(Build.ArtifactStagingDirectory)'
     configuration: '$(buildConfiguration)'
