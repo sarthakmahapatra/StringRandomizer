@@ -1,0 +1,2 @@
+# StringRandomizer
+Random String Generator
