@@ -28,9 +28,6 @@ steps:
   inputs:
     command: pack
     packagesToPack: 'StringRandomizer/*.csproj'
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
-    packDestination: '$(build.ArtifactStagingDirectory)'
+    versioningScheme: byBuildNumber
+    packDestination: '$(Build.ArtifactStagingDirectory)'
     configuration: '$(buildConfiguration)'
