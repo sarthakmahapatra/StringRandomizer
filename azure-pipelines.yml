@@ -29,7 +29,5 @@ steps:
   inputs:
     command: pack
     packagesToPack: 'StringRandomizer/*.csproj'
-    versioningScheme: byEnvVar
-    versionEnvVar: '$(Version)'
     packDestination: '$(Build.ArtifactStagingDirectory)'
     configuration: '$(buildConfiguration)'
