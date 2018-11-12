@@ -21,4 +21,4 @@ steps:
 
 - script: dotnet build
 
-- script: dotnet pack StringRandomizer/*.csproj -p:PackageVersion=$(Version) --output nupkgs
+- script: dotnet pack StringRandomizer/*.csproj -p:PackageVersion=$(Version) --output $(Build.ArtifactStagingDirectory)/drop
