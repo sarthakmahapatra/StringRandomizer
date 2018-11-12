@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version Condition=" '$(Version)' == '' ">1.0.4-beta</Version>
+    <AssemblyVersion Condition=" '$(AssemblyVersion)' == '' ">1.0.1.0</AssemblyVersion>
+    <Authors>Sarthak Mahapatra</Authors>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/sarthakmahapatra/StringRandomizer/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/sarthakmahapatra/StringRandomizer</PackageProjectUrl>
+    <Copyright>© Sarthak Mahapatra 2018. All rights reserved.</Copyright>
+    <RepositoryUrl>https://github.com/Microsoft/ApplicationInsights-Kubernetes/</RepositoryUrl>
+    <PackageTags>String Randomizer Random Generator</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
