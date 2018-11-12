@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version Condition=" '$(Version)' == '' ">1.0.4-beta</Version>
+    <Version Condition=" '$(Version)' == '' ">1.0.5-beta</Version>
     <AssemblyVersion Condition=" '$(AssemblyVersion)' == '' ">1.0.1.0</AssemblyVersion>
     <Authors>Sarthak Mahapatra</Authors>
     <PackageLicenseUrl>https://raw.githubusercontent.com/sarthakmahapatra/StringRandomizer/master/LICENSE.md</PackageLicenseUrl>

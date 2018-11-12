@@ -24,6 +24,6 @@ namespace StringRandomizer.Options
         /// upper alphabets.
         /// </summary>
         /// <value><c>true</c> if has upper alphabets; otherwise, <c>false</c>.</value>
-        public bool HasUpperAlphabets => false;
+        public bool HasUpperAlphabets => true;
     }
 }
