@@ -23,4 +23,4 @@ steps:
 - task: CopyFiles@2
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)' 
-    contents: 'StringRandomizer/**/$(BuildConfiguration)/*.nupkg'
+    contents: '**\bin\**'
