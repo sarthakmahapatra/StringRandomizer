@@ -21,9 +21,4 @@ steps:
 
 - script: dotnet build
 
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    packagesToPack: 'StringRandomizer/*.csproj'
-    packDestination: '$(Build.ArtifactStagingDirectory)'
-    configuration: '$(buildConfiguration)'
+- script: dotnet pack StringRandomizer/*.csproj -p:PackageVersion=$(Version) --output nupkgs
