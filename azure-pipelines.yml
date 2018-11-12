@@ -20,9 +20,7 @@ steps:
 
 - script: dotnet build
 
-- task: PublishBuildArtifacts@1
+- task: CopyFiles@2
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'drop' 
-    publishLocation: 'Azure Artifacts/TFS'
-    targetPath: 'StringRandomizer/**/**/*.nupkg'
+    targetFolder: '$(Build.ArtifactStagingDirectory)' 
+    contents: 'StringRandomizer/**/$(BuildConfiguration)/*.nupkg'
