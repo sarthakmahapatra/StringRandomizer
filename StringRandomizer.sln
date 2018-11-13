@@ -5,6 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringRandomizer", "StringR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringRandomizer.TestConsole", "StringRandomizer.TestConsole\StringRandomizer.TestConsole.csproj", "{DB3B8CAF-4891-426A-9289-74E7A9A31A9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringRandomizer.Tests", "StringRandomizer.Tests\StringRandomizer.Tests.csproj", "{B2CBC36A-6E8C-4A6F-9AAC-51ABA97BE7EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{97BD9E17-2E3D-4C7D-911B-D4EAF9C6B423}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +26,9 @@ Global
 		{DB3B8CAF-4891-426A-9289-74E7A9A31A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB3B8CAF-4891-426A-9289-74E7A9A31A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB3B8CAF-4891-426A-9289-74E7A9A31A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CBC36A-6E8C-4A6F-9AAC-51ABA97BE7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CBC36A-6E8C-4A6F-9AAC-51ABA97BE7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CBC36A-6E8C-4A6F-9AAC-51ABA97BE7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CBC36A-6E8C-4A6F-9AAC-51ABA97BE7EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -33,7 +33,7 @@ namespace StringRandomizer
         {
             _length = length;
             _options = options ?? new DefaultRandomizerOptions();
-            _store = store ?? new DefaultRandomizerStore();
+            _store = store;
 
             if (_options.HasNumbers)
                 _bags.Add(numArr);
@@ -57,7 +57,7 @@ namespace StringRandomizer
         private string Generate(int retry = 0)
         {
             if (retry > 20)
-                throw new OverflowException("Cant generate string any more");
+                throw new Exception("Cant generate string any more");
 
             StringBuilder randomStr = new StringBuilder(_length);
 
@@ -74,7 +74,7 @@ namespace StringRandomizer
                 cnt++;
             }
 
-            if (_store.TryAdd(randomStr.ToString()))
+            if (_store == null || _store.TryAdd(randomStr.ToString()))
                 return randomStr.ToString();
 
             return Generate(++retry);

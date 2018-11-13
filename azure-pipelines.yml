@@ -18,7 +18,9 @@ steps:
 
 - script: dotnet restore
 
-- script: dotnet build
+- script: dotnet test  StringRandomizer.Tests/StringRandomizer.Tests.csproj 
+
+- script: dotnet build -c '$(buildConfiguration)'
 
 - task: CopyFiles@2
   inputs:
