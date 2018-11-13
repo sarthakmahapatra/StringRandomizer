@@ -1,4 +1,6 @@
 ﻿using System;
+using StringRandomizer.Options;
+using StringRandomizer.Stores;
 
 namespace StringRandomizer.TestConsole
 {
@@ -6,18 +8,13 @@ namespace StringRandomizer.TestConsole
     {
         static void Main(string[] args)
         {
-            Randomizer randomizer = new Randomizer();
+            var randomizer = new Randomizer(4, new DefaultRandomizerOptions(hasNumbers: true, hasLowerAlphabets: true, hasUpperAlphabets: false),  new DefaultRandomizerStore());
 
             int i = 0;
 
             while (i < 10000)
             {
-                var time = DateTime.Now;
-
-                Console.WriteLine(randomizer.Next());
-
-                Console.WriteLine(DateTime.Now.Subtract(time).Milliseconds + " ms");
-                Console.WriteLine();
+                Console.WriteLine(randomizer.Next());  
                 i++;
             }
 
