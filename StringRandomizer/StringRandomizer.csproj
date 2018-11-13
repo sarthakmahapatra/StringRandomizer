@@ -7,7 +7,7 @@
     <Version Condition=" '$(Version)' == '' ">1.0.0</Version>
     <AssemblyVersion Condition=" '$(AssemblyVersion)' == '' ">1.0.1.0</AssemblyVersion>
     <Authors>Sarthak Mahapatra</Authors>
-    <PackageDescription>.NET library to Generator Random Strings,Greate for generating OTP.</PackageDescription>
+    <PackageDescription>.NET library to Generator Random Strings, Greate for generating OTP.</PackageDescription>
     <PackageLicenseUrl>https://raw.githubusercontent.com/sarthakmahapatra/StringRandomizer/master/LICENSE.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/sarthakmahapatra/StringRandomizer</PackageProjectUrl>
     <Copyright>© Sarthak Mahapatra 2018. All rights reserved.</Copyright>
