@@ -25,7 +25,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)' 
-    contents: '**/bin/**/*.nupkg'
+    contents: '**/bin/$(buildConfiguration)/*.nupkg'
 
 - task: PublishPipelineArtifact@0
   inputs:
