@@ -1,5 +1,5 @@
 # StringRandomizer
-A simple .NET Random String Generator library. Greate for generating OTP.
+A simple .NET Standard library to Generator Random Strings, Greate for generating OTP and Passwords.
 
 [![Build Status](https://dev.azure.com/sarthak-github/StringRandomizer/_apis/build/status/sarthakmahapatra.StringRandomizer)](https://dev.azure.com/sarthak-github/StringRandomizer/_build/latest?definitionId=1) [![NuGet Badge](https://buildstats.info/nuget/StringRandomizer?includePreReleases=true)](https://www.nuget.org/packages/StringRandomizer/)
 
