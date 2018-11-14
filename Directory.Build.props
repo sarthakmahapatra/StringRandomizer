@@ -1,0 +1,13 @@
+<Project>
+    <!-- <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" /> -->
+    <!--Build-->
+    <PropertyGroup>
+        <Version Condition=" '$(Version)' == '' ">1.1.0</Version>
+        <AssemblyVersion Condition=" '$(AssemblyVersion)' == '' ">1.0.1.0</AssemblyVersion>
+        <Authors>Sarthak Mahapatra</Authors>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/sarthakmahapatra/StringRandomizer/master/LICENSE.md</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/sarthakmahapatra/StringRandomizer</PackageProjectUrl>
+        <Copyright>© Sarthak Mahapatra 2018. All rights reserved.</Copyright>
+        <RepositoryUrl>https://github.com/sarthakmahapatra/StringRandomizer</RepositoryUrl>
+    </PropertyGroup>
+</Project>
