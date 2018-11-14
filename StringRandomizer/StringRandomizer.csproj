@@ -6,8 +6,8 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>StringRandomizer</PackageId>
     <Product>StringRandomizer</Product>
-    <PackageDescription>.NET library to Generator Random Strings, Greate for generating OTP.</PackageDescription>
-    <PackageTags>String Randomizer Random Generator OTP</PackageTags>
+    <PackageDescription>.NET library to Generator Random Strings, Greate for generating OTP and Passwords.</PackageDescription>
+    <PackageTags>String Randomizer Random Generator OTP Password</PackageTags>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
