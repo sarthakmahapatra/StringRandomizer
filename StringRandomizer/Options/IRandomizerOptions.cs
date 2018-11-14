@@ -23,5 +23,11 @@ namespace StringRandomizer.Options
         /// </summary>
         /// <value><c>true</c> if has upper alphabets; otherwise, <c>false</c>.</value>
         bool HasUpperAlphabets { get; }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="StringRandomizer.Options.IRandomizerOptions"/> has special chars.
+        /// </summary>
+        /// <value><c>true</c> if has special chars; otherwise, <c>false</c>.</value>
+        bool HasSpecialChars { get; }
     }
 }

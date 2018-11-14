@@ -27,16 +27,25 @@ namespace StringRandomizer.Options
         public bool HasUpperAlphabets { get; private set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="StringRandomizer.Options.DefaultRandomizerOptions"/> class.
+        /// Gets a value indicating whether this <see cref="StringRandomizer.Options.DefaultRandomizerOptions"/> has
+        /// special chars.
         /// </summary>
-        /// <param name="hasNumbers">If set to <c>true</c> has numbers.</param>
-        /// <param name="hasUpperAlphabets">If set to <c>true</c> has upper alphabets.</param>
-        /// <param name="hasLowerAlphabets">If set to <c>true</c> has lower alphabets.</param>
-        public DefaultRandomizerOptions(bool hasNumbers = true, bool hasUpperAlphabets =true, bool hasLowerAlphabets = false)
+        /// <value><c>true</c> if has special chars; otherwise, <c>false</c>.</value>
+        public bool HasSpecialChars { get; private set; }
+
+       /// <summary>
+       /// Initializes a new instance of the <see cref="StringRandomizer.Options.DefaultRandomizerOptions"/> class.
+       /// </summary>
+       /// <param name="hasNumbers">If set to <c>true</c> has numbers.</param>
+       /// <param name="hasUpperAlphabets">If set to <c>true</c> has upper alphabets.</param>
+       /// <param name="hasLowerAlphabets">If set to <c>true</c> has lower alphabets.</param>
+       /// <param name="hasSpecialChars">If set to <c>true</c> has special chars.</param>
+        public DefaultRandomizerOptions(bool hasNumbers = true, bool hasUpperAlphabets =true, bool hasLowerAlphabets = false, bool hasSpecialChars = false)
         {
             HasNumbers = hasNumbers;
             HasUpperAlphabets = hasUpperAlphabets;
             HasLowerAlphabets = hasLowerAlphabets;
+            HasSpecialChars = hasSpecialChars;
         }
     }
 }

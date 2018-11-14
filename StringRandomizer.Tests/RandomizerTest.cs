@@ -71,5 +71,21 @@ namespace StringRandomizer.Tests
             Assert.AreEqual(6, result.Length);
             Assert.IsFalse(store.TryAdd(result));
         }
+
+
+        [TestMethod]
+        public void GivenRandomize_WhenDefaultRandomizerOptionsLength6AndLOnlySpecialTrue_ThenStringWithLenght6WithSpecial()
+        {
+            //a
+            var randomizer = new Randomizer(6, new DefaultRandomizerOptions(false,false,false,true));
+            Regex rgx = new Regex(@"^[\!\@\#\$\%\^\&\*\(\)\-\+]{6}$");
+
+            //a
+            var result = randomizer.Next();
+
+            //a
+            Assert.IsTrue(rgx.IsMatch(result));
+            Assert.AreEqual(6, result.Length);
+        }
     }
 }

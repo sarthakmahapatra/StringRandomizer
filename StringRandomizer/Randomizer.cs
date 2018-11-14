@@ -18,13 +18,14 @@ namespace StringRandomizer
         string[] numArr = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
         string[] upperAlphaArr = new string[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
         string[] lowerAlphaArr = new string[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+        string[] specialCharArr = new string[] { "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+" };
 
         List<string[]> _bags = new List<string[]>();
 
         Random random = new Random();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:StringRandomizer.Randomizer"/> class.
+        /// Initializes a new instance of the <see cref="StringRandomizer.Randomizer"/> class.
         /// </summary>
         /// <param name="length">Length.</param>
         /// <param name="options">Options.</param>
@@ -43,6 +44,9 @@ namespace StringRandomizer
 
             if (_options.HasUpperAlphabets)
                 _bags.Add(upperAlphaArr);
+
+            if (_options.HasSpecialChars)
+                _bags.Add(specialCharArr);
         }
 
         /// <summary>
