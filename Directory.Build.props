@@ -7,7 +7,7 @@
         <Authors>Sarthak Mahapatra</Authors>
         <PackageLicenseUrl>https://raw.githubusercontent.com/sarthakmahapatra/StringRandomizer/master/LICENSE.md</PackageLicenseUrl>
         <PackageProjectUrl>https://github.com/sarthakmahapatra/StringRandomizer</PackageProjectUrl>
-        <Copyright>© Sarthak Mahapatra 2018. All rights reserved.</Copyright>
+        <Copyright>©Sarthak Mahapatra 2018. All rights reserved.</Copyright>
         <RepositoryUrl>https://github.com/sarthakmahapatra/StringRandomizer</RepositoryUrl>
     </PropertyGroup>
 </Project>
