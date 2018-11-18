@@ -32,7 +32,7 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'cobertura'
-    summaryFileLocation: 'StringRandomizer.Tests/coverage.cobertura.xml'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/StringRandomizer.Tests/coverage.cobertura.xml'
 
 - task: CopyFiles@2
   inputs:
