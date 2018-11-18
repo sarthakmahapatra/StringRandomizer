@@ -18,9 +18,21 @@ steps:
 
 - script: dotnet restore
 
-- script: dotnet test  StringRandomizer.Tests/StringRandomizer.Tests.csproj 
-
 - script: dotnet build -c '$(buildConfiguration)'
+
+- script: dotnet test  StringRandomizer.Tests/StringRandomizer.Tests.csproj --logger "trx;LogFileName=out.trx" /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura  -c  '$(buildConfiguration)'  --no-build
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'MSTest'
+    testResultsFiles: 'StringRandomizer/StringRandomizer.Tests/TestResults/out.trx' 
+    testRunTitle: 'Unit Test'
+    buildConfiguration: '$(buildConfiguration)'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: '/StringRandomizer/StringRandomizer.Tests/coverage.cobertura.xml'
 
 - task: CopyFiles@2
   inputs:
