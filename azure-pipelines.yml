@@ -25,14 +25,14 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'MSTest'
-    testResultsFiles: 'StringRandomizer/StringRandomizer.Tests/TestResults/out.trx' 
+    testResultsFiles: 'StringRandomizer.Tests/TestResults/out.trx' 
     testRunTitle: 'Unit Test'
     buildConfiguration: '$(buildConfiguration)'
 
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'cobertura'
-    summaryFileLocation: '/StringRandomizer/StringRandomizer.Tests/coverage.cobertura.xml'
+    summaryFileLocation: 'StringRandomizer.Tests/coverage.cobertura.xml'
 
 - task: CopyFiles@2
   inputs:
