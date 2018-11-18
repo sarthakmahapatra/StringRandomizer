@@ -24,7 +24,7 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'MSTest'
+    testResultsFormat: 'VSTest'
     testResultsFiles: 'StringRandomizer.Tests/TestResults/out.trx' 
     testRunTitle: 'Unit Test'
     buildConfiguration: '$(buildConfiguration)'
