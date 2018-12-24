@@ -8,14 +8,14 @@ namespace StringRandomizer.Stores
     /// </summary>
     public class DefaultRandomizerStore : IRandomizerStore
     {
-        List<string> _store;
+        HashSet<string> _store;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="StringRandomizer.Stores.DefaultRandomizerStore"/> class.
         /// </summary>
         public DefaultRandomizerStore()
         {
-            _store = new List<string>();
+            _store = new HashSet<string>();
         }
 
         /// <summary>
@@ -27,11 +27,7 @@ namespace StringRandomizer.Stores
         {
             lock (_store)
             {
-                if (_store.Contains(key))
-                    return false;
-
-                _store.Add(key);
-                return true;
+               return _store.Add(key);
             }
         }
     }
